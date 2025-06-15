@@ -1,0 +1,36 @@
+/*! Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*! Paleta de colores elegida*/
+:root {
+  --negro: #221F24;
+  --rojo-vino: #7D1119;
+  --rojo-coral: #C43E46;
+  --gris-claro: #8F9AA6;
+  --gris-medio: #717B8B;
+}
+
+/*! Estilos base para mobile first */
+body {
+  max-width: 414px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--rojo-vino);
+  background-image: url(../assets/brand/BG-mobile-menu-ohlala.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  /*
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  */
+  color: var(--gris-claro);
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+}
