@@ -19,7 +19,7 @@ body {
   margin: 0 auto;
   padding: 0;
   background-color: var(--rojo-vino);
-  background-image: url(../assets/brand/BG-mobile-menu-ohlala.png);
+  background-image: url(/assets/brand/BG-mobile-menu-ohlala.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -34,7 +34,7 @@ body {
   position: fixed;
   inset: 0;
   background-color: var(--rojo-vino);
-  background-image: url(../assets/brand/BG-MOBILE-MENU-OHLALA.png);
+background-image: url(/assets/brand/BG-MOBILE-MENU-OHLALA.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
