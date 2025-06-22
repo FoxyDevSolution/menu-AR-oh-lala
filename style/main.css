@@ -81,10 +81,6 @@ body {
   transform-origin: center;
 }
 
-
-
-
-
 .splash-container h1 {
   font-size: 2rem;
   margin-bottom: 20px;
@@ -103,4 +99,61 @@ body {
 
 .splash-container button:hover {
   background-color: var(--rojo-vino);
+}
+
+div.acordion-menu {
+  margin-top: 130px;
+}
+
+/* Estilos para hacer el acordeón transparente */
+
+/* Contenedor de cada item del acordeón */
+.accordion-item {
+    background-color: transparent; /* Fondo transparente */
+    border: var(--rojo-vino); 
+    margin-bottom: 10px; /* Opcional: para separar los items transparentes */
+    color: var(--negro); /* Color del texto cuando está colapsado */
+}
+
+/* El encabezado (botón) del acordeón */
+.accordion-button {
+    background-color: transparent; /* Fondo transparente para el botón */
+    color: var(--negro); /* Usa tu color de texto deseado para el botón */
+    border: var(--rojo-vino);
+    box-shadow: none; /* Eliminar cualquier sombra que Bootstrap pueda añadir en el foco */
+}
+
+/* Estado cuando el botón está colapsado */
+.accordion-button.collapsed {
+    background-color: transparent; /* Fondo transparente cuando está colapsado */
+    color: var(--negro); /* Color del texto cuando está colapsado */
+}
+
+/* Estado cuando el botón está activo (abierto) */
+.accordion-button:not(.collapsed) {
+    background-color: var(--gris-medio); /* Fondo transparente cuando está abierto */
+    color: var(--rojo-vino); /* Color del texto cuando está colapsado */
+    font-weight: 00;
+    border: var(--negro);
+}
+
+/* Eliminar el fondo cuando se enfoca (clic o tab) */
+.accordion-button:focus {
+    box-shadow: inset;  /* Eliminar el halo de foco predeterminado de Bootstrap */
+    border-color: var(--rojo-vino); /* Asegurarse de que el borde en foco sea transparente */
+}
+
+/* El cuerpo del contenido del acordeón */
+.accordion-body {
+    background-color: transparent; /* Fondo transparente para el contenido */
+    color: var(--negro); /* Color del texto del contenido */
+    border-top: none; /* Eliminar el borde superior que Bootstrap añade por defecto */
+}
+
+/* Estilos para las imágenes dentro del acordeón (importante para que no se desborden) */
+.accordion-body img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Para centrar si es necesario */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
 }

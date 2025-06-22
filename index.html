@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--! Favicon -->
     <link rel="icon" href="assets/brand/favicon.png" type="image/png">
+    <!--! Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!--! CSS principal -->
     <link rel="stylesheet" href="style/main.css">
     <!--! A-Frame para modelos 3D y escena AR -->
@@ -24,9 +26,56 @@
   </div>
 </div>
 
+<div class="container my-4"> <div class="row justify-content-center">
+    <div class="col-11 col-sm-10 col-md-8 col-lg-5">
+<div class="accordion acordion-menu" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Plato N°1
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <img src="/assets/img/ejplato1.png" alt="Ejemplo plato 1" class="img-fluid">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat impedit rerum alias voluptatem facere consequuntur facilis consectetur soluta distinctio. Possimus eos eligendi sit. Asperiores necessitatibus unde ipsa dignissimos quae.</div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Plato N°2
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <img src="/assets/img/ejplato2.png" alt="Ejemplo plato 2" class="img-fluid">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit deserunt dolores natus, magni modi omnis veniam. Consequuntur tempore obcaecati at eaque, quibusdam vitae accusantium, facilis quaerat nemo, delectus natus odit?</div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Plato N°3
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <img src="/assets/img/ejplato3.png" alt="Ejemplo plato N°3" class="img-fluid">
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod aperiam culpa quam molestiae, id libero inventore error corporis nihil consectetur dolores, explicabo magni rem dolorem, nam cupiditate? Dolor, voluptatibus alias.</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
 
+    <!--! scripts bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
-<!--! Tu lógica de JS personalizada -->
+<!--! lógica de JS personalizada -->
 <script src="js/main.js"></script>
 </body>
 </html>
