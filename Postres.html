@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Postres - Oh La Lá</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style/main.css">
+</head>
+
+<body class="bg-custom">
+
+
+<h1 class="display-4 mb-4 text-bg-dark text-center titutoentrada">Postres</h1>
+ 
+<!--! Contenedor único del acordeón -->
+<div class="accordion accordion-flush" id="accordionEntradas">
+
+<!--? === POSTRE N° 1: Flan Casero === -->
+<div class="accordion-item bg-dark text-light border border-secondary rounded-4 overflow-hidden">
+  <h2 class="accordion-header">
+     <!--* Cambiar las clases postre -->
+    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#postre1" aria-expanded="false" aria-controls="postre1">
+      Flan Casero
+    </button>
+  </h2>
+     <!--* Cambiar id postre -->
+  <div id="postre1" class="accordion-collapse collapse" data-bs-parent="#accordionEntradas">
+    <div class="accordion-body">
+      
+      <!--* Carrousel fotos -->
+      <div id="carouselPostre1" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="assets/img/postres-1a.jpg" class="d-block w-100" alt="Flan 1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/postres-1b.jpg" class="d-block w-100" alt="Flan 2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/postres-1c.jpg" class="d-block w-100" alt="Flan 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPostre1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPostre1" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!--* Precio y descripción -->
+      <h5 class="text-warning">$13.000</h5>
+      <p>
+        Flan casero con opción de dulce de leche, crema chantilly o crema de caramelo. Un clásico irresistible que nunca falla.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!--? === POSTRE N° 2: Crème Brûlée === -->
+<div class="accordion-item bg-dark text-light border border-secondary rounded-4 overflow-hidden">
+  <h2 class="accordion-header">
+     <!--* Cambiar las clases postre -->
+    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#postre2" aria-expanded="false" aria-controls="postre2">
+      Crème Brûlée
+    </button>
+  </h2>
+     <!--* Cambiar id postre -->
+  <div id="postre2" class="accordion-collapse collapse" data-bs-parent="#accordionEntradas">
+    <div class="accordion-body">
+      
+      <!--* Cambiar id y fotos-->
+      <div id="carouselPostre2" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="assets/img/postres-2a.jpg" class="d-block w-100" alt="Creme brulee 1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/postres-2b.jpg" class="d-block w-100" alt="Creme brulee 2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/postres-2c.jpg" class="d-block w-100" alt="Creme brulee 3">
+          </div>
+        </div>
+        <!--* Cambiar data-bs-target-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPostre2" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+                <!--* Cambiar data-bs-target-->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPostre2" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!--* Cambiar precio -->
+      <h5 class="text-warning">$13.000</h5>
+        <!--* Cambiar precio -->
+      <p>
+        Suave crema de vainilla con superficie crocante de azúcar caramelizada al soplete. Refinado y elegante.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!--? === POSTRE N° 3: Peras al vino tinto con helado de vainilla === -->
+<div class="accordion-item bg-dark text-light border border-secondary rounded-4 overflow-hidden">
+  <h2 class="accordion-header">
+     <!--* Cambiar data-bs-target y aria-controls -->
+    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#postre3" aria-expanded="false" aria-controls="postre3">
+      Peras al vino tinto con helado de vainilla
+    </button>
+  </h2>
+     <!--* Cambiar id postre -->
+  <div id="postre3" class="accordion-collapse collapse" data-bs-parent="#accordionEntradas">
+    <div class="accordion-body">
+      
+      <!--* Cambiar id y fotos-->
+      <div id="carouselPostre3" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="assets/img/postres-3a.jpg" class="d-block w-100" alt="peras 1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/postres-3b.jpg" class="d-block w-100" alt="peras 2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/postres-3c.jpg" class="d-block w-100" alt="peras 3">
+          </div>
+        </div>
+        <!--* Cambiar data-bs-target-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPostre3" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+                <!--* Cambiar data-bs-target-->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPostre3" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!--* Cambiar precio -->
+      <h5 class="text-warning">$10.000</h5>
+        <!--* Cambiar precio -->
+      <p>
+         Peras cocidas lentamente en vino especiado, acompañadas de helado artesanal de vainilla.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!--? === POSTRE N° 4: Sopa de frutos rojos con "quenelle" de helado americana (Sin TACC) === -->
+<div class="accordion-item bg-dark text-light border border-secondary rounded-4 overflow-hidden">
+  <h2 class="accordion-header">
+     <!--* Cambiar data-bs-target y aria-controls -->
+    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#postre4" aria-expanded="false" aria-controls="postre4">
+      Sopa de frutos rojos con "quenelle" de helado americana (Sin TACC)
+    </button>
+  </h2>
+     <!--* Cambiar id postre -->
+  <div id="postre4" class="accordion-collapse collapse" data-bs-parent="#accordionEntradas">
+    <div class="accordion-body">
+      
+      <!--* Cambiar id y fotos-->
+      <div id="carouselPostre4" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="assets/img/postres-4a.jpg" class="d-block w-100" alt="peras 1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/postres-4b.jpg" class="d-block w-100" alt="peras 2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/postres-4c.jpg" class="d-block w-100" alt="peras 3">
+          </div>
+        </div>
+        <!--* Cambiar data-bs-target-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPostre4" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+                <!--* Cambiar data-bs-target-->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPostre4" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!--* Cambiar precio -->
+      <h5 class="text-warning">$13.000</h5>
+        <!--* Cambiar precio -->
+      <p>
+         Reducción tibia de frutos rojos servida con helado americano y hojas de menta fresca.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!--? === POSTRE N° 5: Ensalada de frutas === -->
+<div class="accordion-item bg-dark text-light border border-secondary rounded-4 overflow-hidden">
+  <h2 class="accordion-header">
+     <!--* Cambiar data-bs-target y aria-controls -->
+    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#postre5" aria-expanded="false" aria-controls="postre5">
+      Ensalada de frutas
+    </button>
+  </h2>
+     <!--* Cambiar id postre -->
+  <div id="postre5" class="accordion-collapse collapse" data-bs-parent="#accordionEntradas">
+    <div class="accordion-body">
+      
+      <!--* Cambiar id y fotos-->
+      <div id="carouselPostre5" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="assets/img/postres-5a.jpg" class="d-block w-100" alt="Ensalada 1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/postres-5b.jpg" class="d-block w-100" alt="Ensalada 2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/postres-5c.jpg" class="d-block w-100" alt="Ensalada 3">
+          </div>
+        </div>
+        <!--* Cambiar data-bs-target-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPostre5" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+                <!--* Cambiar data-bs-target-->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPostre5" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!--* Cambiar precio -->
+      <h5 class="text-warning">$8.000</h5>
+        <!--* Cambiar precio -->
+      <p>
+         Selección de frutas frescas de estación servidas en copa. Refrescante y liviano.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!--? === POSTRE N° 6: Mousse de chocolate blanco con base crocante === -->
+<div class="accordion-item bg-dark text-light border border-secondary rounded-4 overflow-hidden">
+  <h2 class="accordion-header">
+     <!--* Cambiar data-bs-target y aria-controls -->
+    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#postre6" aria-expanded="false" aria-controls="postre6">
+      Mousse de chocolate blanco con base crocante
+    </button>
+  </h2>
+     <!--* Cambiar id postre -->
+  <div id="postre6" class="accordion-collapse collapse" data-bs-parent="#accordionEntradas">
+    <div class="accordion-body">
+      
+      <!--* Cambiar id y fotos-->
+      <div id="carouselPostre6" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="assets/img/postres-6a.jpg" class="d-block w-100" alt="Mousse 1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/postres-6b.jpg" class="d-block w-100" alt="Mousse 2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/postres-6c.jpg" class="d-block w-100" alt="Mousse 3">
+          </div>
+        </div>
+        <!--* Cambiar data-bs-target-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPostre6" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+                <!--* Cambiar data-bs-target-->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPostre6" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!--* Cambiar precio -->
+      <h5 class="text-warning">$16.000</h5>
+        <!--* Cambiar precio -->
+      <p>
+         Mousse aireado de chocolate blanco sobre una base crujiente de galleta. Dulzura y textura.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!--? === POSTRE N° 7: Copa Drácula (Sin TACC) === -->
+<div class="accordion-item bg-dark text-light border border-secondary rounded-4 overflow-hidden">
+  <h2 class="accordion-header">
+     <!--* Cambiar data-bs-target y aria-controls -->
+    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#postre7" aria-expanded="false" aria-controls="postre7">
+      Copa Drácula (Sin TACC)
+    </button>
+  </h2>
+     <!--* Cambiar id postre -->
+  <div id="postre7" class="accordion-collapse collapse" data-bs-parent="#accordionEntradas">
+    <div class="accordion-body">
+      
+      <!--* Cambiar id y fotos-->
+      <div id="carouselPostre7" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="assets/img/postres-7a.jpg" class="d-block w-100" alt="Dracula 1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/postres-7b.jpg" class="d-block w-100" alt="Dracula 2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/postres-7c.jpg" class="d-block w-100" alt="Dracula 3">
+          </div>
+        </div>
+        <!--* Cambiar data-bs-target-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPostre7" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+                <!--* Cambiar data-bs-target-->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPostre7" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!--* Cambiar precio -->
+      <h5 class="text-warning">$15.000</h5>
+        <!--* Cambiar precio -->
+      <p>
+         Mousse de chocolate, compota de frambuesa y yogur natural en capas. Un contraste de sabores y texturas.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!--? === POSTRE N° 8: Copa Drácula (Sin TACC) === -->
+<div class="accordion-item bg-dark text-light border border-secondary rounded-4 overflow-hidden">
+  <h2 class="accordion-header">
+     <!--* Cambiar data-bs-target y aria-controls -->
+    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#postre8" aria-expanded="false" aria-controls="postre8">
+      Brownie con helado (Sin TACC / Vegano)
+    </button>
+  </h2>
+     <!--* Cambiar id postre -->
+  <div id="postre8" class="accordion-collapse collapse" data-bs-parent="#accordionEntradas">
+    <div class="accordion-body">
+      
+      <!--* Cambiar id y fotos-->
+      <div id="carouselPostre8" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="assets/img/postres-8a.jpg" class="d-block w-100" alt="Brownie 1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/postres-8b.jpg" class="d-block w-100" alt="Brownie 2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/postres-8c.jpg" class="d-block w-100" alt="Brownie 3">
+          </div>
+        </div>
+        <!--* Cambiar data-bs-target-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPostre8" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+                <!--* Cambiar data-bs-target-->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPostre8" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!--* Cambiar precio -->
+      <h5 class="text-warning">$15.000</h5>
+        <!--* Cambiar precio -->
+      <p>
+         Brownie húmedo vegano con helado americana o limón, bañado en salsa de frutos rojos.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!--? === POSTRE N° 9: Espuma de tiramisú === -->
+<div class="accordion-item bg-dark text-light border border-secondary rounded-4 overflow-hidden">
+  <h2 class="accordion-header">
+     <!--* Cambiar data-bs-target y aria-controls -->
+    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#postre9" aria-expanded="false" aria-controls="postre9">
+      Espuma de tiramisú
+    </button>
+  </h2>
+     <!--* Cambiar id postre -->
+  <div id="postre9" class="accordion-collapse collapse" data-bs-parent="#accordionEntradas">
+    <div class="accordion-body">
+      
+      <!--* Cambiar id y fotos-->
+      <div id="carouselPostre9" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="assets/img/postres-9a.jpg" class="d-block w-100" alt="Espuma 1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/postres-9b.jpg" class="d-block w-100" alt="Espuma 2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/postres-9c.jpg" class="d-block w-100" alt="Espuma 3">
+          </div>
+        </div>
+        <!--* Cambiar data-bs-target-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPostre9" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+                <!--* Cambiar data-bs-target-->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPostre9" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!--* Cambiar precio -->
+      <h5 class="text-warning">$15.000</h5>
+        <!--* Cambiar precio -->
+      <p>
+         Versión moderna y aireada del clásico italiano, con cacao, mascarpone y notas de café.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!--? === POSTRE N° 10: Crepes con frutas de estación y crema de naranja === -->
+<div class="accordion-item bg-dark text-light border border-secondary rounded-4 overflow-hidden">
+  <h2 class="accordion-header">
+     <!--* Cambiar data-bs-target y aria-controls -->
+    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#postre10" aria-expanded="false" aria-controls="postre10">
+      Crepes con frutas de estación y crema de naranja
+    </button>
+  </h2>
+     <!--* Cambiar id postre -->
+  <div id="postre10" class="accordion-collapse collapse" data-bs-parent="#accordionEntradas">
+    <div class="accordion-body">
+      
+      <!--* Cambiar id y fotos-->
+      <div id="carouselPostre10" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="assets/img/postres-10a.jpg" class="d-block w-100" alt="Crepes 1">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/postres-10b.jpg" class="d-block w-100" alt="Crepes 2">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/postres-10c.jpg" class="d-block w-100" alt="Crepes 3">
+          </div>
+        </div>
+        <!--* Cambiar data-bs-target-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselPostre10" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+                <!--* Cambiar data-bs-target-->
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselPostre10" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!--* Cambiar precio -->
+      <h5 class="text-warning">$10.000</h5>
+        <!--* Cambiar precio -->
+      <p>
+         Crepes finos rellenos de frutas frescas con crema cítrica de naranja. Ligero y aromático.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="d-grid gap-3 col-10 mx-auto mt-3">
+  <a href="index.html" onclick="sessionStorage.setItem('desdeOtraPagina', 'true')" class="btn btn-lg btn-danger">Volver al menú principal</a>
+</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
