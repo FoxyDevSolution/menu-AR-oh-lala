@@ -4,13 +4,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const enterBtn = document.getElementById("enter-btn");
   const audio = document.getElementById("welcome-audio");
 
-  const desdeOtraPagina = sessionStorage.getItem("desdeOtraPagina");
+  // Al inicio ocultamos el splash hasta que acepte la alerta
+  splash.style.display = "none";
 
-  // Intentar reproducir apenas carga (algunos navegadores lo permiten)
+  // Mostrar alerta inicial
+  alert("Un viaje gastronómico comienza aquí. ¿Listo para entrar?");
+
+  // Una vez que acepta la alerta, mostramos el splash
+  splash.style.display = "block";
+
+  // Intentar reproducir música
   if (audio) {
     audio.play().catch(err => {
       console.log("El navegador bloqueó el autoplay. Se habilitará al primer click.");
-      // Si lo bloquea, la próxima interacción lo habilita
       document.addEventListener("click", () => {
         if (audio.paused) {
           audio.play();
@@ -19,22 +25,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  if (desdeOtraPagina === "true") {
+  // Botón ingresar
+  enterBtn.addEventListener("click", () => {
     splash.style.display = "none";
     menuPrincipal.style.display = "block";
-    sessionStorage.removeItem("desdeOtraPagina");
-    if (audio) audio.pause();
-  } else {
-    enterBtn.addEventListener("click", () => {
-      splash.style.display = "none";
-      menuPrincipal.style.display = "block";
-      if (audio) {
-        audio.pause();
-        audio.currentTime = 0; // reinicia por si volvés
-      }
-    });
-  }
+    if (audio) {
+      audio.pause();
+      audio.currentTime = 0;
+    }
+  });
 });
+
 
 
 
